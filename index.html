@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <nav>
+        PasswordGenerator
+    </nav>
+    <div class="geneAct">
+        <div class="loader inactive">Loading...</div>
+        <p class="generator autoCopy">Click in generate for view retults</p>
+        <p class="mensajeOculto inactive">Por tu seguridad, ocultaremos esta información (puedes copiar con solo un click)</p>
+    </div>
+        <form>
+            <input type="radio" class="tierra" name="selector" id="numeros">
+            <label>Números</label>
+            <input type="radio" class="tierra" name="selector" id="letras">
+            <label>Letras</label>
+            <input type="radio" class="tierra" name="selector" id="ambos">
+            <label>Números y Letras</label>
+            <input type="radio" class="tierra" name="selector" id="super" checked>
+            <label>Carácteres especiales</label>
+        </form>
+    
+        <div>
+            <button class="btn-generator">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Generate</span>
+              </button>
+
+              <button class="resetAll">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Reset</span>
+              </button>
+        </div>
+    
+          <h4>History</h4>
+          <label class="rocker rocker-small ">
+              <input type="checkbox" class="ocultateHistory">
+              <span class="switch-left">HIDE</span>
+              <span class="switch-right">ON</span>
+            </label>
+            <!-- <button class="ocultateHistory">
+          </button> -->
+    <div class="containerAll">
+
+        
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
