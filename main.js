@@ -12,7 +12,7 @@ let characters
 let loader = document.querySelector('.loader')
 
 
-btn_generator.addEventListener('click',()=>selectTheChar(16))
+btn_generator.addEventListener('click',selectTheChar)
 ocultateHistory.addEventListener('click',toggleHystory)
 resetAll.addEventListener('click',deleteall)
 
@@ -23,8 +23,16 @@ function deleteall(){
     location.reload()
 }
 
-function selectTheChar(length){
+function selectTheChar(){
     mensajeOculto.classList.add('inactive')
+
+    if(document.querySelector('#_8').checked){
+        length = 8
+    }else if(document.querySelector('#_16').checked){
+        length = 16
+    }else if(document.querySelector('#_32').checked){
+        length = 32
+    }
 
     if(document.querySelector('#numeros').checked){
         characters = num
