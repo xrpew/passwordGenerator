@@ -5,9 +5,9 @@ let mensajeOculto = document.querySelector('.mensajeOculto')
 let ocultateHistory = document.querySelector('.ocultateHistory')
 let resetAll = document.querySelector('.resetAll')
 let array = []
-let char = 'qwerSDFGrtyuGHJKvbnmXCVBsdfgUIOjklñ'
+let char = 'qwerSDFGrtyuGHJKvbnASDBNMGKDFLSADFmXCVBsdfgUIOjklñ'
 let num = '123456789'
-let all = '2987354_@w#1d&fghjkpñxcvb/*-+'
+let all = '123456789qwerSDFGrtyuGHJKvbnASDBNMGKDFLSADFmXCVBsdfgUIOjklñ/*-+@_?#%&'
 let characters
 let loader = document.querySelector('.loader')
 
@@ -56,9 +56,9 @@ function makeid(length, characters) {
         loader.classList.add('inactive')
 
         placeHolder.classList.remove('blur')
-        var result           = '';
-        var charactersLength = characters.length;
-        for ( var i = 0; i < length; i++ ) {
+        let result           = '';
+        let charactersLength = characters.length;
+        for ( let i = 0; i < length; i++ ) {
             result += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
     
